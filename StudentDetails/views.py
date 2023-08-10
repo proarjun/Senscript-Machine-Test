@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from rest_framework import generics
-from .models import StudentDetails
-from .serializers import StudentDetailsSerializer
+from .models import StudentDetails, StudentMarks
+from .serializers import StudentDetailsSerializer, StudentMarksSerializer
 
 # Create your views here.
 
@@ -14,3 +14,7 @@ class StudentDetailList(generics.ListCreateAPIView):
 class StudentView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = StudentDetailsSerializer
     queryset = StudentDetails.objects.all()
+
+class StudentMarksView(generics.RetrieveUpdateDestroyAPIView):
+    serializer_class = StudentMarksSerializer
+    queryset = StudentMarks.objects.all()
