@@ -12,7 +12,7 @@ The project is an application that performs CRUD operations to store, update and
 
  The List View has a filter button with a search box for searching student credentials based on student id number, phone, email.
 
- To view, update or delete the student credentials, go to http://127.0.0.1:8000/<id>
+ To view, update or delete the student credentials, go to rhttp://127.0.0.1:8000/<id>
 
  To add marklist to a new student, go to http://127.0.0.1:8000/marks/<id>. Select the admission number and add the marks for three subjects. 
 
