@@ -14,8 +14,8 @@ The project is an application that performs CRUD operations to store, update and
 
  To view, update or delete the student credentials, go to http://127.0.0.1:8000/(id)
 
- To add marklist to a new student, go to http://127.0.0.1:8000/marks/<id>. Select the admission number and add the marks for three subjects. 
+ To add marklist to a new student, go to http://127.0.0.1:8000/marks/(id). Select the admission number and add the marks for three subjects. 
 
- To update or delete the marklist of a student, go to http://127.0.0.1:8000/marks/<id>/update
+ To update or delete the marklist of a student, go to http://127.0.0.1:8000/marks/(id)/update
 
 
