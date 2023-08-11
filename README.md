@@ -25,7 +25,6 @@ The project is an application that performs CRUD operations to store, update and
 
  Dependencies
  -------------
- django
- djangorestframework
+ django, djangorestframework
 
  (Note: The dependencies have also been listed in the Pipfile in the main directory.)
