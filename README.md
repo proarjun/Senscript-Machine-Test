@@ -8,7 +8,7 @@ The project is an application that performs CRUD operations to store, update and
  
  A pagination of three student credentials per page is given to the list view.
 
-(Note: Always enter the student id as integer/numerical only.)
+(Note: Always enter the id as integer/numerical only. Student_id will be automatically get updated as 'STD_id')
 
  The List View has a filter button with a search box for searching student credentials based on student id number, phone, email.
 
