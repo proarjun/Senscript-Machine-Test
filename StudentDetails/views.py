@@ -15,6 +15,10 @@ class StudentView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = StudentDetailsSerializer
     queryset = StudentDetails.objects.all()
 
+class StudentMarksList(generics.CreateAPIView, generics.RetrieveAPIView):
+    serializer_class = StudentMarksSerializer
+    queryset = StudentMarks.objects.all()
+
 class StudentMarksView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = StudentMarksSerializer
     queryset = StudentMarks.objects.all()

@@ -14,10 +14,11 @@ class StudentDetails(models.Model):
     photo = models.ImageField( null= True, blank= True)
 
     def __str__(self) -> str:
-        return self.name
+        return self.student_id
 
 class StudentMarks(models.Model):
-    id = models.OneToOneField(StudentDetails, related_name='student_number', on_delete=models.CASCADE, primary_key=True)
+    admission = models.OneToOneField(StudentDetails, on_delete=models.CASCADE, primary_key=True, related_name='marks')
     SUB1 = models.IntegerField()
     SUB2 = models.IntegerField()
     SUB3 = models.IntegerField()
+
