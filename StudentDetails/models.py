@@ -17,7 +17,7 @@ class StudentDetails(models.Model):
         return self.student_id
 
 class StudentMarks(models.Model):
-    admission = models.OneToOneField(StudentDetails, on_delete=models.CASCADE, primary_key=True, related_name='marks')
+    admission = models.OneToOneField(StudentDetails, on_delete=models.CASCADE, primary_key=True, related_name='marks', to_field = 'id')
     SUB1 = models.IntegerField()
     SUB2 = models.IntegerField()
     SUB3 = models.IntegerField()

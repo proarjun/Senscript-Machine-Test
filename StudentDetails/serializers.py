@@ -2,7 +2,10 @@ from rest_framework import serializers
 from .models import StudentDetails, StudentMarks
 
 class StudentMarksSerializer(serializers.ModelSerializer):
-
+    def validate(self, attrs):
+        temp = attrs['admission']
+        attrs['admission'] = 'STD_' + str(temp)
+        return attrs
     class Meta:
         model = StudentMarks
         fields = ['admission', 'SUB1', 'SUB2', 'SUB3']
